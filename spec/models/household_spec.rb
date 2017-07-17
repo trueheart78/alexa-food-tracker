@@ -4,26 +4,36 @@ require 'rails_helper'
 
 RSpec.describe Household, type: :model do
   context 'relationships' do
-    it 'has many type tags' do
+    context 'types tags' do
+      it 'has many' do
+      end
     end
 
-    it 'has many users' do
-
+    context 'users' do
+      it 'has many' do
+      end
     end
 
-    it 'has many location tags' do
-
+    context 'location tags' do
+      it 'has many' do
+      end
     end
 
-    it 'has many foods' do
-
+    context 'foods' do
+      it 'has many' do
+      end
     end
   end
 
   context 'default scope' do
-    it 'does not include inactive' do
-
+    it 'includes active' do
     end
+
+    it 'does not include inactive' do
+    end
+
+    let!(:active_user)   { FactoryGirl::Create :user, active: true }
+    let!(:inactive_user) { FactoryGirl::Create :user, active: false }
   end
 
   context 'validations' do
