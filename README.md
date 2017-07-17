@@ -1,5 +1,7 @@
 # Alexa Food Tracker
 
+[![CircleCI](https://circleci.com/gh/trueheart78/alexa-food-tracker.svg?style=svg)](https://circleci.com/gh/trueheart78/alexa-food-tracker)
+
 A lovely WIP :heart:
 
 ## Versions
