@@ -8,4 +8,7 @@ class User < ApplicationRecord
   belongs_to :household
   scope :active,   -> { where active: true }
   scope :inactive, -> { where active: false }
+
+  validates :email, presence: true
+  validates :password, length: { minimum: 8 }
 end

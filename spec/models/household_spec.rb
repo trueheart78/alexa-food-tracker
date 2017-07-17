@@ -52,7 +52,7 @@ RSpec.describe Household, type: :model do
 
     context 'active' do
       it 'only includes active' do
-        Household.active.each do |hh|
+        described_class.active.each do |hh|
           expect(hh).to be_active
         end
       end
@@ -60,7 +60,7 @@ RSpec.describe Household, type: :model do
 
     context 'inactive' do
       it 'only includes inactive' do
-        Household.inactive.each do |hh|
+        described_class.inactive.each do |hh|
           expect(hh).to_not be_active
         end
       end
