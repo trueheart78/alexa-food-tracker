@@ -55,7 +55,6 @@ RSpec.describe Household, type: :model do
       it 'name cannot be nil' do
         subject.name = nil
         subject.valid?
-        byebug
 
         expect(name_error).to eq blank_error
       end
