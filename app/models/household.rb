@@ -9,4 +9,6 @@ class Household < ApplicationRecord
   has_many :food
 
   default_scope { where active: true }
+
+  validates :name, presence: true
 end

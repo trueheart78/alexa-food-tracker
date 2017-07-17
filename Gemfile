@@ -39,6 +39,7 @@ group :development, :test do
   gem 'selenium-webdriver'
   gem 'sqlite3'
   gem 'factory_girl_rails', '~> 4.8'
+  gem 'rspec-junklet', '~> 2.2'
 end
 
 group :development do
