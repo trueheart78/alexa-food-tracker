@@ -4,25 +4,44 @@ require 'rails_helper'
 
 RSpec.describe Household, type: :model do
   context 'relationships' do
+    before do
+      sample_size.times { FactoryGirl.create type, household: household }
+    end
+
     context 'types tags' do
       it 'has many' do
+        expect(household.types.size).to eq sample_size
       end
+
+      let(:type) { :type }
     end
 
     context 'users' do
       it 'has many' do
+        expect(household.users.size).to eq sample_size
       end
+
+      let(:type) { :user }
     end
 
     context 'location tags' do
       it 'has many' do
+        expect(household.locations.size).to eq sample_size
       end
+
+      let(:type) { :location }
     end
 
     context 'foods' do
       it 'has many' do
+        expect(household.food.size).to eq sample_size
       end
+
+      let(:type) { :food }
     end
+
+    let(:sample_size) { 2 }
+    let(:household)   { FactoryGirl.create :household }
   end
 
   context 'scopes' do

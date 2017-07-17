@@ -3,9 +3,9 @@
 class Household < ApplicationRecord
   has_paper_trail
 
-  has_many :type_tags
+  has_many :types
   has_many :users
-  has_many :location_tags
+  has_many :locations
   has_many :food
 
   scope :active,   -> { where active: true }
