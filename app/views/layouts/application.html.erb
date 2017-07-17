@@ -10,7 +10,7 @@
 
   <body>
     <%= render 'layouts/login_toolbar' %>
-    <%= render 'layouts/flash' %>
+    <%= render 'layouts/flash' if flash.any? %>
     <%= yield %>
   </body>
 </html>
