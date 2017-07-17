@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 class Household < ApplicationRecord
   has_many :type_tags
   has_many :users
