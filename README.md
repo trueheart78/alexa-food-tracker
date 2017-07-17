@@ -12,7 +12,7 @@ Runs on Rails 5.1 and Ruby 2.4 using Postgresql 9.6.
 
 ## Logging Records
 
-[Paper Trail][paper_trail] is used for logging data for change-management on per-class basis.
+[Paper Trail][paper_trail] is used for logging data for change-management on a per-class basis.
 
 ## Testing
 
