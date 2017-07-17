@@ -2,27 +2,22 @@
 
 A lovely WIP :heart:
 
-## Notes to Future Self
+## Versions
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+Runs on Rails 5.1 and Ruby 2.4 using Postgresql 9.6.
 
-Things you may want to cover:
+## Logging Records
 
-* Ruby version
+[paper_trail][paper_trail] is used for logging data for change-management on per-class basis.
 
-* System dependencies
+## Testing
 
-* Configuration
+Standard [RSpec][rspec] and [FactoryGirl][factory_girl].
 
-* Database creation
+```
+bundle exec rspec
+```
 
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+[paper_trail]: https://github.com/airblade/paper_trail
+[rspec]: https://github.com/rspec/rspec-rails
+[factory_girl]: https://github.com/thoughtbot/factory_girl_rails 

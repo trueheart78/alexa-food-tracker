@@ -1,6 +1,8 @@
 # frozen_string_literal: true
 
 class Food < ApplicationRecord
+  has_paper_trail
+
   belongs_to :household
   has_many :types, through: :food_types
   has_many :food_types

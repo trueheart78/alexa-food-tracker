@@ -19,6 +19,7 @@ gem 'webpacker'
 gem 'coffee-rails', '~> 4.2'
 gem 'jbuilder', '~> 2.5'
 gem 'turbolinks', '~> 5'
+gem 'paper_trail', '~> 7.1'
 # Use Redis adapter to run Action Cable in production
 # gem 'redis', '~> 3.0'
 # Use ActiveModel has_secure_password
@@ -36,6 +37,7 @@ group :development, :test do
   gem 'rubocop', require: false
   gem 'selenium-webdriver'
   gem 'sqlite3'
+  gem 'factory_girl_rails', '~> 4.8'
 end
 
 group :development do

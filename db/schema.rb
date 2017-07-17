@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20170608143322) do
+ActiveRecord::Schema.define(version: 20170717140052) do
 
   create_table "food_locations", force: :cascade do |t|
     t.integer "food_id"
@@ -86,6 +86,16 @@ ActiveRecord::Schema.define(version: 20170608143322) do
     t.datetime "updated_at", null: false
     t.index ["household_id", "active"], name: "index_users_on_household_id_and_active"
     t.index ["household_id"], name: "index_users_on_household_id"
+  end
+
+  create_table "versions", force: :cascade do |t|
+    t.string "item_type", null: false
+    t.integer "item_id", null: false
+    t.string "event", null: false
+    t.string "whodunnit"
+    t.text "object", limit: 1073741823
+    t.datetime "created_at"
+    t.index ["item_type", "item_id"], name: "index_versions_on_item_type_and_item_id"
   end
 
 end
