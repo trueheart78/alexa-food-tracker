@@ -6,5 +6,6 @@ class User < ApplicationRecord
   has_paper_trail
 
   belongs_to :household
-  default_scope { where active: true }
+  scope :active,   -> { where active: true }
+  scope :inactive, -> { where active: false }
 end

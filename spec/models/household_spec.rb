@@ -25,15 +25,27 @@ RSpec.describe Household, type: :model do
     end
   end
 
-  context 'default scope' do
-    it 'includes active' do
+  context 'scopes' do
+    before do
+      FactoryGirl.create :active_household
+      FactoryGirl.create :inactive_household
     end
 
-    it 'does not include inactive' do
+    context 'active' do
+      it 'only includes active' do
+        Household.active.each do |hh|
+          expect(hh).to be_active
+        end
+      end
     end
 
-    let!(:active_user)   { FactoryGirl::Create :user, active: true }
-    let!(:inactive_user) { FactoryGirl::Create :user, active: false }
+    context 'inactive' do
+      it 'only includes inactive' do
+        Household.inactive.each do |hh|
+          expect(hh).to_not be_active
+        end
+      end
+    end
   end
 
   context 'validations' do
@@ -43,6 +55,7 @@ RSpec.describe Household, type: :model do
       it 'name cannot be nil' do
         subject.name = nil
         subject.valid?
+        byebug
 
         expect(name_error).to eq blank_error
       end

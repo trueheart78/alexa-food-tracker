@@ -8,7 +8,8 @@ class Household < ApplicationRecord
   has_many :location_tags
   has_many :food
 
-  default_scope { where active: true }
+  scope :active,   -> { where active: true }
+  scope :inactive, -> { where active: false }
 
   validates :name, presence: true
 end

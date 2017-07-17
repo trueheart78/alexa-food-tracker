@@ -40,6 +40,7 @@ group :development, :test do
   gem 'sqlite3'
   gem 'factory_girl_rails', '~> 4.8'
   gem 'rspec-junklet', '~> 2.2'
+	gem 'faker', '~> 1.8'
 end
 
 group :development do
