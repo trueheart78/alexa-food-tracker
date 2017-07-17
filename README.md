@@ -6,6 +6,10 @@ A lovely WIP :heart:
 
 Runs on Rails 5.1 and Ruby 2.4 using Postgresql 9.6.
 
+## Authentication
+
+[Clearance][clearance] is the library of choice for simple authentication.
+
 ## Logging Records
 
 [paper_trail][paper_trail] is used for logging data for change-management on per-class basis.
@@ -18,6 +22,7 @@ Standard [RSpec][rspec] and [FactoryGirl][factory_girl].
 bundle exec rspec
 ```
 
+[clearance]: https://github.com/thoughtbot/clearance
 [paper_trail]: https://github.com/airblade/paper_trail
 [rspec]: https://github.com/rspec/rspec-rails
 [factory_girl]: https://github.com/thoughtbot/factory_girl_rails 
