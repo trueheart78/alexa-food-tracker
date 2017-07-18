@@ -21,6 +21,7 @@ gem 'jbuilder', '~> 2.5'
 gem 'turbolinks', '~> 5'
 gem 'paper_trail', '~> 7.1'
 gem 'clearance', '~> 1.16'
+gem 'rollbar', '~> 2.15'
 # Use Redis adapter to run Action Cable in production
 # gem 'redis', '~> 3.0'
 # Use ActiveModel has_secure_password
