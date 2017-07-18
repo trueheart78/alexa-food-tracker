@@ -2,7 +2,7 @@
 
 FactoryGirl.define do
   factory :type, aliases: [:types] do
-    name { %w[dinner lunch breakfast snack meal].sample }
+    name { %w[dinner lunch breakfast snack meal fruit].sample }
     household
     deleted false
   end
