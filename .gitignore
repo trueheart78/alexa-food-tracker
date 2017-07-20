@@ -28,3 +28,6 @@
 /public/packs
 /elm-stuff
 /node_modules
+
+# Environment file
+.env

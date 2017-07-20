@@ -24,7 +24,12 @@ Standard [RSpec][rspec] and [FactoryGirl][factory_girl].
 bundle exec rspec
 ```
 
+## Environment Variables
+
+`ROLLBAR_ACCESS_TOKEN` for [Rollbar][rollbar] support.
+
 [clearance]: https://github.com/thoughtbot/clearance
 [paper_trail]: https://github.com/airblade/paper_trail
 [rspec]: https://github.com/rspec/rspec-rails
 [factory_girl]: https://github.com/thoughtbot/factory_girl_rails 
+[rollbar]: https://rollbar.com
