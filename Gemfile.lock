@@ -103,12 +103,12 @@ GEM
       mime-types-data (~> 3.2015)
     mime-types-data (3.2016.0521)
     mini_mime (0.1.4)
-    mini_portile2 (2.2.0)
+    mini_portile2 (2.3.0)
     minitest (5.10.3)
     multi_json (1.12.1)
     nio4r (2.1.0)
-    nokogiri (1.8.0)
-      mini_portile2 (~> 2.2.0)
+    nokogiri (1.8.1)
+      mini_portile2 (~> 2.3.0)
     paper_trail (7.1.1)
       activerecord (>= 4.0, < 5.2)
       request_store (~> 1.1)
@@ -253,6 +253,7 @@ DEPENDENCIES
   faker (~> 1.8)
   jbuilder (~> 2.5)
   listen (>= 3.0.5, < 3.2)
+  nokogiri (>= 1.8.1)
   paper_trail (~> 7.1)
   pg (~> 0.20.0)
   puma (~> 3.7)
@@ -272,9 +273,7 @@ DEPENDENCIES
   web-console (>= 3.3.0)
   webpacker
 
-
 RUBY VERSION
    ruby 2.4.1p111
-
 BUNDLED WITH
    1.15.1
